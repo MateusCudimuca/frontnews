@@ -1,0 +1,46 @@
+.header{
+    height: auto;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),url("../source/hero_4.jpg") center no-repeat !important;
+    background-size: cover;
+}
+
+/*hero*/
+.hero{
+    text-align: right;
+}
+/*servico*/
+.servico .img-col{
+    width: 180px;
+}
+
+.servico .col:nth-child(2){
+    border: none;  
+    margin-top: 0px;
+    padding: 0px 20px;
+}
+
+/*test*/
+.test{
+    background: #313131;
+    margin-bottom:60px;
+    padding: 30px 0;
+    color: #fafafa;
+}
+.col-left{
+    flex-basis: 60%;
+}
+.col-right{
+    flex-basis: 40%;
+}
+
+.col-left img{
+    position: relative;
+   bottom:0px;
+   width: 90%;
+   border: solid 10px #fafafa;
+   border-radius: 1px;
+}
+.list-test .fa{
+    font-size: 2rem;
+}

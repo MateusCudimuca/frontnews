@@ -1,0 +1,142 @@
+@import "style.css";
+@media only screen and (min-width:300px) and (max-width:700px){
+    
+    *{
+        text-align: center;
+    }
+    /*auterando a row padrão*/
+       .row{
+        flex-direction: column;
+
+    }
+   
+   
+    /*auterando o flex-basic de todas as colunas*/
+       .col,.col-left,.col-right{
+        flex-basis: 100%;
+    
+       }
+       /*auterando a segunda coluna do team four*/
+       .col:nth-child(2){
+           padding:60px 10px;
+           border: none;
+           margin-top: 0;
+       }
+       /*auterando a test*/
+       .test .col-left{
+           text-align: center;
+           }
+   
+       .test .col-right{
+           padding-top:40px;
+       }
+       .test .row{
+           flex-direction: column-reverse;
+       
+        }
+       
+       /*parceiros*/
+        .col-p{
+        
+        padding: 20px 0;
+        }
+
+        /*footer*/
+       input,button{
+           width: 100%;
+           border-radius: 4px;
+           margin: 0;
+           margin-bottom: 10px;
+        
+       }
+       
+    .col-f{
+        margin-bottom: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    .footer .fa{
+        font-size: 2.5rem;
+    }
+       
+   }
+
+
+
+
+
+
+
+
+
+
+
+   @media only screen and (min-width:700px){
+       
+    /*menu*/
+    .menu-toggle{
+        display: none;
+    }
+    .nav-list{
+        position:initial;
+        width: initial;
+        height: initial;
+        background: transparent;
+        z-index: initial;
+        display: initial;
+        flex-direction: initial;
+        justify-content:initial;
+        align-items: initial;
+        top: initial;
+        left: initial;
+        bottom: initial;
+        transition:none ;
+    }
+.item-list{
+    display: inline-block;
+    padding: 0 15px;
+    
+}
+    
+      /*Alterando a segunda coluna do team four*/
+      
+      .col{
+        flex-basis: 48%;
+        padding: 30px 0;
+    }
+   
+      .col:nth-child(2){
+            padding:0;
+           border:none;
+           margin-top: 0;
+           position: relative;
+       }
+       /*auterando test*/
+       .test .col-right{
+           padding-top:60px;
+       }
+       .test .row{
+           flex-direction:row;
+       }
+       /*footer*/
+    
+   }
+
+   @media only screen and (min-width:960px){
+
+
+         /*Alterando a segunda coluna do team four*/
+      
+         .col{
+            flex-basis: 33%;
+            padding: 30px 0;
+        }
+       
+        .col:nth-child(2){
+            padding: 30px 10px;
+            border: solid .09rem transparent;
+              border-left-color: rgba(0,0,0,.05);
+              border-right-color: rgba(0,0,0,.05);
+              margin-top: 120px;
+          }
+   }
